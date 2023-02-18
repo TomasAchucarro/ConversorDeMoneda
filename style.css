@@ -1,0 +1,13 @@
+*{
+    color:white
+}
+.borderStyle{
+    border: 5px rgba(0, 89, 255, 0.363) solid;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.bg{
+    background-color: #1A202C;
+}
+select, button, option, input{
+    color: black !important;
+}

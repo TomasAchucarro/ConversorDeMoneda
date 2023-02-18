@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main
+      class="vh-100 vw-100 d-flex justify-content-center align-items-center bg-secondary"
+    >
+      <div class="bg rounded-3 d-flex flex-column borderStyle">
+        <h1 class="text-center mx-2">Convertidor de Monedas</h1>
+        <div class="d-flex align-items-center flex-column">
+          <h2 class="fs-5">Seleccione el tipo de moneda y el monto:</h2>
+          <!-- <p>
+            USD:Dólar estadounidense 
+            ARS:Peso argentino 
+            EUR:Euro 
+            GBP:Libra esterlina 
+            BRL:Real brasileño</p> -->
+          <div
+            class="d-flex justify-content-center align-items-center w-100 gap-2"
+          >
+            <select class="" id="firstSelect">
+              <option value="USD">Dólar estadounidense(USD)</option>
+              <option value="ARS">Peso argentino(ARS)</option>
+              <option value="EUR">Euro(EUR)</option>
+              <option value="GBP">Libra esterlina(GBP)</option>
+              <option value="BRL">Real brasileño(BRL)</option>
+            </select>
+            <input
+              class="w-25 rounded-3 border-0 p-1"
+              type="text"
+              id="cantidad"
+            />
+          </div>
+          <h3 class="fs-5 mt-3">Cambiar a:</h3>
+          <select class="" id="secondSelect">
+            <option value="USD">Dólar estadounidense(USD)</option>
+            <option value="ARS">Peso argentino(ARS)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="GBP">Libra esterlina(GBP)</option>
+            <option value="BRL">Real brasileño(BRL)</option>
+          </select>
+          <button class="border-0 px-4 py-1 rounded-2 mt-2" id="btnPral">
+            Aceptar
+          </button>
+          <p class="fst-italic">Cantidad convertida</p>
+          <p id="cantidadConvertida"></p>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
