@@ -30,7 +30,7 @@ function cantidadConvertida() {
       let firstSelect = data[selectFrom];
       let secondSelect = firstSelect[selectTo];
       let operationInput = cantidad.value * secondSelect;
-      resultado.innerText = `${operationInput} ${selectTo}`;
+      resultado.innerText = `${operationInput.toLocaleString('es-ES')} ${selectTo}`;
       Toastify({
         text: "Operación realizada correctamente",
         duration: 3000,
